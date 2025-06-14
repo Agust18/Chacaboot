@@ -1,12 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fdfdfd;
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #333;
     color: #333;
     margin: 0;
     padding: 20px;
-    background-image: url("../imagenes/potrerodigital.jpg");
-    backdrop-filter: blur(2px);
+    font-weight: bold;
+    /* background-image: url("../imagenes/potrerodigital.jpg"); */
+    /* backdrop-filter: blur(2px); */
 }
+
+
 
 /* Divider con línea a los costados */
 .divider {
@@ -37,96 +40,328 @@ body {
     z-index: 0;
 }
 
-/* Trabajo 1 */
-.tp1 {
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    margin: 0 auto 40px auto; /* centrado horizontal + espacio abajo */
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    margin: 0 auto 40px auto;
-   
-    max-width: 50%; /* o el ancho que prefieras */
-    text-align: center;
+.navbar{
+    display: flex;
+    justify-content: center;
+     background-color: #fff;
+     padding: 15px;
+     border-radius: 10px;
+     max-width: 1000px;
+        margin: auto;    
 }
 
-.tp1 h1{
-    text-decoration: underline 3px solid  rgba(0, 0, 0, 0.726);
-    text-underline-offset: 3px;
+header{
+    margin-bottom: 10px;
+}
+.navbar ul{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+  
 }
 
-.tp1 h1, .tp1 h2, .tp1 h3 {
-    margin: 10px 0;
-   
-}
-
-.tp1 a {
+.navbar ul a{
     text-decoration: none;
-    color: #0077cc;
-    font-weight: bold;
-}
-
-.tp1 a:hover {
-    color: #ff6600;
-}
-
-/* Trabajo 2 */
-.tp2 {
     background-color: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    max-width: 1000px;
-    margin: auto;
+    border-radius : 40%;
+    border:solid 4px #6b4c9a;
+    padding: 10px;
+    color: #333;
 }
 
-
-
-.tp2 img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+.navbar ul a:hover{
+    background-color: #6b4c9a;
+    color: #fff;
+    text-transform: uppercase;
 }
 
-.tp2 h1, .tp2 h2, .tp2 h3 {
-    margin-top: 20px;
-    color: #6b4c9a;
-    text-decoration: underline 3px solid #6b4c9a;
-    text-underline-offset: 3px;
+.tp2 {
+  max-width: 1000px;
+  margin:auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  color: #333;
 }
 
-.tp2 p, .tp2 li {
-    line-height: 1.6;
+.tp2 {
+  max-width: 900px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 5px 20px;
+  
 }
 
-ul.noorden, ol.orden {
-    padding-left: 20px;
-    margin-top: 10px;
+/* INTRO */
+.intro h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #6b4c9a;
 }
 
-iframe {
-    width: 100%;
-    max-width: 950px;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    border-radius: 10px;
-    margin-top: 30px;
+.intro-img {
+  text-align: center;
+  margin-bottom: 25px;
 }
 
-/* Mapa */
+.intro-img img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 3px solid #6b4c9a;
+  transition: box-shadow 0.3s;
+}
+
+.intro-img img:hover {
+  box-shadow: 0 0 12px #6b4c9a;
+}
+
+/* DESCRIPCION */
+.descripcion h2 {
+  color: #6b4c9a;
+  margin-bottom: 5px;
+}
+
+.descripcion p {
+  font-size: 1em;
+ line-height: 1.5rem;
+  margin-bottom: 35px;
+}
+
+/* INGREDIENTES + ASIDE LAYOUT */
+.ingredientes-contenedor {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.ingredientes {
+  flex: 1 1 300px;
+  border: 2px solid #6b4c9a;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.ingredientes h2,
+.ingredientes h3 {
+  color: #6b4c9a;
+  margin-bottom: 12px;
+}
+
+.noorden {
+  list-style: none;
+  padding-left: 0;
+}
+
+.noorden li {
+  margin-bottom: 8px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.noorden li::before {
+  content: "•";
+  color: #6b4c9a;
+  position: absolute;
+  left: 0;
+}
+
+/* Link dentro ingredientes */
+.ingredientes a {
+  color: #6b4c9a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ingredientes a:hover {
+  text-decoration: underline;
+}
+
+/* Aside imagen ingredientes */
+.ingredientes-aside {
+  flex: 1 1 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingredientes-aside img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 3px solid #6b4c9a;
+  transition: box-shadow 0.3s;
+}
+
+.ingredientes-aside img:hover {
+  box-shadow: 0 0 12px #6b4c9a;
+}
+
+/* PASOS */
+.pasos {
+  margin-bottom: 35px;
+}
+
+.pasopaso {
+  color: #6b4c9a;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.orden {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.orden li {
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+/* VIDEO */
+.video {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.video iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  border: 3px solid #6b4c9a;
+}
+
+/* MAPA */
 .mapa {
-    margin-top: 40px;
-    text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.mapa h2 {
+  color: #6b4c9a;
+  margin-bottom: 15px;
 }
 
 .mapa iframe {
-    width: 100%;
-    max-width: 600px;
-    height: 450px;
-    border: none;
-    border-radius: 10px;
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  border: 3px solid #6b4c9a;
 }
+
+
+/* Títulos */
+.tp2 h1, .tp2 h2, .tp2 h3 {
+  color: #6b4c9a;
+  margin-bottom: 10px;
+}
+
+/* Links */
+.tp2 a {
+  color: #6b4c9a;
+  text-decoration: none;
+}
+
+.tp2 a:hover {
+  text-decoration: underline;
+}
+
+/* Listas sin estilo de orden */
+.noorden {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+/* Pasos ordenados */
+.orden {
+  padding-left: 20px;
+}
+
+/* Video iframe */
+.tp2 iframe {
+  width: 100%;
+  height: 360px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Aside mapa separado */
+.mapa {
+  margin-top: 40px;
+}
+
+.footer {
+  background-color: #fff;
+color: #333;
+text-align: center;
+padding: 5px 20px;
+margin: 30px auto;
+border-radius: 10px;
+max-width: 900px;
+font-family: Arial, sans-serif;
+
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.red-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+    align-items: center; /* 🔑 asegura alineación vertical entre íconos */
+  
+}
+
+.red-social img {
+  width: 70px;
+  height: 70x;
+  transition: transform 0.3s;
+  border-radius: 8px;
+  object-fit: cover;
+
+   
+
+   
+}
+
+.red-social img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+.wsp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    z-index: 9999;
+    cursor: pointer;
+  
+}
+
+.wsp-btn img {
+    width: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+   
+}
+
+/* .wsp-btn img:hover {
+    transform: scale(1.1);
+    transform: translateY(-5px);
+} */
+
