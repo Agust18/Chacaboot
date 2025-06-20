@@ -1,12 +1,12 @@
 body {
     font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #333;
+    background-color: #3333336c;
     color: #333;
     margin: 0;
     padding: 20px;
     font-weight: bold;
-    /* background-image: url("../imagenes/potrerodigital.jpg"); */
-    /* backdrop-filter: blur(2px); */
+     background-image: url("/imagenes/19092820170919_530114_paulina-cocina.jpg"); 
+    backdrop-filter: blur(2px); 
 }
 
 
@@ -40,23 +40,62 @@ body {
     z-index: 0;
 }
 
-.navbar{
-    display: flex;
-    justify-content: center;
-     background-color: #fff;
-     padding: 15px;
-     border-radius: 10px;
-     max-width: 1000px;
-        margin: auto;    
+.encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 3rem 2.5rem 3rem 2.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  justify-content: space-around;
+  
 }
 
-header{
-    margin-bottom: 10px;
+.logo img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #6b4c9a;
+  
+  
 }
+
+
+
+.titulo {
+  font-size: 2em;
+  color: #6b4c9a;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+.navbar{
+    display: flex;
+     background-color: #fff;
+     padding: 3rem 2.5rem 3rem 2.5rem;
+     border-radius: 10px;
+     max-width: 900px;
+    margin: 1.5rem auto;  
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    
+  
+}
+
 .navbar ul{
     flex-wrap: wrap;
     display: flex;
-    gap: 20px;
+    gap: 2.5rem;
   
 }
 
@@ -65,7 +104,7 @@ header{
     background-color: #fff;
     border-radius : 40%;
     border:solid 4px #6b4c9a;
-    padding: 10px;
+    padding: 5px;
     color: #333;
 }
 
@@ -75,27 +114,29 @@ header{
     text-transform: uppercase;
 }
 
-.tp2 {
+/* .tp2 {
   max-width: 1000px;
   margin:auto;
   background: #fff;
-  padding: 20px;
+  padding: 10px 15px 10px 15px;
   border-radius: 10px;
   font-family: sans-serif;
   color: #333;
-}
+} */
 
 .tp2 {
   max-width: 900px;
   margin: 30px auto;
   font-family: Arial, sans-serif;
+  background: #fff;
   color: #333;
-  padding: 5px 20px;
+  padding: 3rem 2.5rem 3rem 2.5rem;
+   border-radius: 10px;
   
 }
 
 /* INTRO */
-.intro h1 {
+.intro h2 {
   text-align: center;
   margin-bottom: 15px;
   color: #6b4c9a;
@@ -235,21 +276,20 @@ header{
   border: 3px solid #6b4c9a;
 }
 
-/* MAPA */
-.mapa {
+
+/* .mapa {
   max-width: 700px;
   margin: 0 auto 50px;
   text-align: center;
-}
+} */
 
-.mapa h2 {
+.footer h2 {
   color: #6b4c9a;
   margin-bottom: 15px;
 }
 
-.mapa iframe {
-  width: 100%;
-  height: 400px;
+.footer iframe {
+  margin-bottom: 10px;
   border-radius: 10px;
   border: 3px solid #6b4c9a;
 }
@@ -285,32 +325,35 @@ header{
 
 /* Video iframe */
 .tp2 iframe {
-  width: 100%;
-  height: 360px;
+ 
   margin-top: 20px;
   border-radius: 10px;
   border: none;
 }
 
 /* Aside mapa separado */
-.mapa {
+/* .mapa {
   margin-top: 40px;
-}
+}  */
 
 .footer {
-  background-color: #fff;
+display: flex;
+background-color: #fff;
 color: #333;
 text-align: center;
-padding: 5px 20px;
+padding: 3rem 2.5rem 3rem 2.5rem;
 margin: 30px auto;
 border-radius: 10px;
 max-width: 900px;
 font-family: Arial, sans-serif;
+justify-content: space-around;
+flex-wrap: wrap;
+ align-items: stretch; /* 👈 Importante: hace que ambos lados tengan la misma altura */
 
 }
 
 .footer p {
-  margin-bottom: 10px;
+  margin: 10px;
   font-size: 1.2em;
   font-weight: bold;
   font-family: sans-serif;
@@ -320,13 +363,45 @@ font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   gap: 20px;
-    align-items: center; /* 🔑 asegura alineación vertical entre íconos */
+  align-items: center; /*  asegura alineación vertical entre íconos */
+  flex-wrap: wrap;
+  margin: 15px;
   
+}
+
+.ubicacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  
+
+}
+
+.ubicacion iframe {
+  width: 100%; /*  que se adapte al contenedor */
+  max-width: 450px; /*  no más ancho de lo necesario */
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 10px;
+}
+
+
+.info-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
 }
 
 .red-social img {
   width: 70px;
-  height: 70x;
   transition: transform 0.3s;
   border-radius: 8px;
   object-fit: cover;
@@ -337,7 +412,7 @@ font-family: Arial, sans-serif;
 }
 
 .red-social img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 
@@ -346,22 +421,51 @@ font-family: Arial, sans-serif;
 .wsp-btn {
     position: fixed;
     bottom: 20px;
-    right: 100px;
+    right: 40px;
     z-index: 9999;
     cursor: pointer;
+    
   
 }
 
 .wsp-btn img {
     width: 60px;
     border-radius: 50%;
-    transition: transform 0.3s;
+   
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
    
 }
 
-/* .wsp-btn img:hover {
-    transform: scale(1.1);
-    transform: translateY(-5px);
-} */
+/*media responsive a partir de tal tamaño
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px 10px 15px;
+    margin-top: 5px;
+  }
+
+  .navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar ul a {
+    width: 100%;
+    display: block;
+  }
+
+  .logo img {
+    width: 80px;
+    height: auto;
+  }
+}
+  */
 
