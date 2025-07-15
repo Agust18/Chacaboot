@@ -331,6 +331,12 @@ body {
   border: none;
 }
 
+.btn{
+  color: white !important;
+  background-color: #333;
+  font-weight: bold;
+  
+}
 /* Aside mapa separado */
 /* .mapa {
   margin-top: 40px;
