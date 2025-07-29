@@ -475,3 +475,116 @@ flex-wrap: wrap;
 }
   */
 
+/*se activa al hacer click en el boton en el frontend*/
+
+.divinclusivo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.botoninclusivo {
+  background-color: #6b4c9a;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  border: none;
+}
+
+.botoninclusivo:hover {
+  background-color: #4b367a;
+  transform: scale(1.05);
+}
+
+.divinfocreator {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.butoninfocreator {
+  background-color: #6b4c9a;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.butoninfocreator:hover {
+  background-color: #4b367a;
+  transform: scale(1.05);
+}
+
+
+
+
+
+body.modo-inclusivo {
+  background-color: #111;
+  color: #f1f1f1;
+}
+
+body.modo-inclusivo .encabezado,
+body.modo-inclusivo .navbar,
+body.modo-inclusivo .tp2,
+body.modo-inclusivo .footer,
+body.modo-inclusivo .ingredientes {
+  background-color: #222;
+  color: #f1f1f1;
+}
+
+body.modo-inclusivo .titulo,
+body.modo-inclusivo .tp2 h1,
+body.modo-inclusivo .tp2 h2,
+body.modo-inclusivo .tp2 h3,
+body.modo-inclusivo .intro h2,
+body.modo-inclusivo .descripcion h2,
+body.modo-inclusivo .ingredientes h2,
+body.modo-inclusivo .ingredientes h3,
+body.modo-inclusivo .pasopaso,
+body.modo-inclusivo .footer h2 {
+  color: #ddd;
+}
+
+body.modo-inclusivo a {
+  color: #f9c74f;
+}
+
+body.modo-inclusivo .navbar ul a {
+  background-color: #111;
+  color: #f1f1f1;
+  border-color: #f9c74f;
+}
+
+body.modo-inclusivo .navbar ul a:hover {
+  background-color: #f9c74f;
+  color: #111;
+}
+
+body.modo-inclusivo .ingredientes {
+  background-color: #1a1a1a;
+}
+
+body.modo-inclusivo .orden li,
+body.modo-inclusivo .noorden li,
+body.modo-inclusivo .footer p {
+  color: #eee;
+}
+
+body.modo-inclusivo .red-social img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.1);
+}
+
+body.modo-inclusivo .intro-img img,
+body.modo-inclusivo .ingredientes-aside img,
+body.modo-inclusivo .video iframe,
+body.modo-inclusivo .ubicacion iframe {
+  border-color: #f9c74f;
+}
